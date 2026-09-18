@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Andrew and Sarah are getting engaged — Saturday 26 September 2026, Maryland Wedding Hall, Assiut.">
+<meta name="theme-color" content="#12101C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%8D%3C/text%3E%3C/svg%3E">
+
+<!-- Link preview, for when this gets sent round on WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://andrewemad98.github.io/andrew-sarah/">
+<meta property="og:title" content="Andrew &amp; Sarah">
+<meta property="og:description" content="Saturday 26 September 2026 · 8pm · Maryland Wedding Hall, Assiut">
+<meta property="og:image" content="https://andrewemad98.github.io/andrew-sarah/photos/01-we-said-yes.jpg">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="ar_EG">
+<meta name="twitter:card" content="summary_large_image">
+
+<title>Andrew &amp; Sarah</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=Jost:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&display=swap">
+
+<style>
+/* ============================================================
+   TOKENS — one committed evening palette (candlelight + gold leaf)
+   ============================================================ */
+/* Supplied by the Claude artifact host; written out here because GitHub
+   Pages serves this file raw. */
+:root{
+  padding-top:env(safe-area-inset-top, 0px);
+  padding-bottom:env(safe-area-inset-bottom, 0px);
+}
+[hidden]{ display:none !important; }
+
+:root{
+  --night:      #12101C;
+  --night-deep: #0C0A14;
+  --surface:    #1B172B;
+  --surface-2:  #221D35;
+  --gold:       #D8B26B;
+  --gold-soft:  #EBD3A0;
+  --gold-dim:   #7E683F;
+  --rose:       #E3A9A0;
+  --cream:      #F2EBE0;
+  --muted:      #9A91A8;
+  --hairline:   rgba(216,178,107,.26);
+
+  --display: "Bodoni Moda", "Didot", "Times New Roman", serif;
+  --body:    "Jost", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+
+  --gutter: clamp(20px, 5vw, 64px);
+  --measure: 62ch;
+  --ease: cubic-bezier(.22,.61,.36,1);
+
+  color-scheme: dark;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  background:var(--night);
+  color:var(--cream);
+  font-family:var(--body);
+  font-weight:300;
+  font-size:clamp(15px,.4vw + 14px,17px);
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* A soft candlelit wash behind everything */
+body::before{
+  content:"";
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(900px 620px at 18% -8%, rgba(216,178,107,.14), transparent 62%),
+    radial-gradient(760px 560px at 92% 12%, rgba(227,169,160,.10), transparent 60%),
+    radial-gradient(1100px 900px at 50% 108%, rgba(216,178,107,.08), transparent 66%);
+}
+
+h1,h2,h3{ font-family:var(--display); font-weight:400; margin:0; text-wrap:balance; }
+
+a{ color:inherit; }
+img{ display:block; max-width:100%; }
+
+::selection{ background:rgba(216,178,107,.3); color:var(--cream); }
+
+:focus-visible{
+  outline:2px solid var(--gold);
+  outline-offset:3px;
+  border-radius:2px;
+}
+
+/* ============================================================
+   SHARED PIECES
+   ============================================================ */
+.wrap{
+  position:relative; z-index:1;
+  width:100%;
+  max-width:1120px;
+  margin-inline:auto;
+  padding-inline:var(--gutter);
+}
+
+.eyebrow{
+  font-family:var(--body);
+  font-size:.66rem;
+  font-weight:500;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  color:var(--gold);
+  display:flex;
+  align-items:center;
+  gap:.85em;
+  margin:0;
+}
+.eyebrow::before{
+  content:"";
+  width:6px; height:6px;
+  background:var(--gold);
+  transform:rotate(45deg);
+  flex:none;
+}
+
+.rule{
+  height:1px;
+  background:linear-gradient(90deg, transparent, var(--hairline) 18%, var(--hairline) 82%, transparent);
+  border:0;
+  margin:0;
+}
+
+section{ position:relative; z-index:1; }
+
+.section-pad{ padding-block:clamp(72px,10vw,132px); }
+
+/* ============================================================
+   STICKY HEADER
+   ============================================================ */
+.topbar{
+  position:fixed;
+  top:env(safe-area-inset-top, 0px);
+  left:0; right:0;
+  z-index:40;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:10px var(--gutter);
+  padding-top:calc(10px + env(safe-area-inset-top, 0px));
+  padding-inline-end:calc(var(--gutter) + 104px);
+  background:rgba(12,10,20,.72);
+  backdrop-filter:blur(14px) saturate(1.2);
+  -webkit-backdrop-filter:blur(14px) saturate(1.2);
+  border-bottom:1px solid rgba(216,178,107,.14);
+  opacity:0;
+  transform:translateY(-100%);
+  transition:opacity .45s var(--ease), transform .45s var(--ease);
+  pointer-events:none;
+}
+.topbar.is-on{ opacity:1; transform:none; pointer-events:auto; }
+
+.topbar__progress{
+  position:absolute;
+  inset-inline-start:0; bottom:-1px;
+  height:1px; width:0;
+  background:linear-gradient(90deg, var(--gold-dim), var(--gold));
+}
+
+.topbar__mark{
+  font-family:var(--display);
+  font-size:1.05rem;
+  letter-spacing:.14em;
+  color:var(--cream);
+  text-decoration:none;
+  white-space:nowrap;
+}
+.topbar__mark em{ font-style:italic; color:var(--gold); padding-inline:.12em; }
+
+.topnav{ display:flex; gap:clamp(12px,2.4vw,30px); }
+.topnav a{
+  font-size:.68rem;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--muted);
+  text-decoration:none;
+  transition:color .25s var(--ease);
+  white-space:nowrap;
+}
+.topnav a:hover{ color:var(--gold); }
+@media (max-width:640px){ .topnav a:not(.topnav__cta){ display:none; } }
+@media (max-width:520px){ .topnav{ display:none; } }
+
+.topnav__cta{ color:var(--gold) !important; }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  position:relative;
+  padding-block:clamp(64px,10vh,118px) clamp(48px,7vh,88px);
+  overflow:hidden;
+  text-align:center;
+}
+
+#motes{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  z-index:0;
+  pointer-events:none;
+  opacity:.9;
+}
+
+.hero .wrap{ display:flex; flex-direction:column; align-items:center; gap:clamp(20px,2.6vw,32px); }
+.hero .names{ margin-block:clamp(-2px,.4vw,6px); }
+.hero .scrollcue{ margin-top:clamp(4px,1.4vw,14px); }
+
+/* The seal — strokes draw themselves on load */
+.seal{ width:clamp(88px,13vw,122px); height:auto; overflow:visible; }
+.seal circle,.seal path,.seal line{ fill:none; stroke:var(--gold); vector-effect:non-scaling-stroke; }
+.seal .seal__ring{ stroke-width:1; opacity:.55; }
+.seal .seal__ring-2{ stroke-width:.6; opacity:.35; }
+.seal .seal__leaf{ stroke-width:.9; opacity:.75; }
+.seal__letters{
+  font-family:"Bodoni Moda","Didot","Times New Roman",serif;
+  font-size:26px;
+  fill:var(--gold-soft);
+  stroke:none;
+  text-anchor:middle;
+  letter-spacing:.04em;
+}
+
+.hero__kicker{
+  font-size:.68rem;
+  font-weight:500;
+  letter-spacing:.42em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin:0;
+}
+
+.names{
+  font-size:clamp(3.1rem,13.5vw,8.6rem);
+  line-height:.92;
+  letter-spacing:-.015em;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:clamp(2px,.6vw,10px);
+  margin:0;
+}
+.names__amp{
+  font-style:italic;
+  font-weight:400;
+  color:var(--gold);
+  font-size:.52em;
+  line-height:1;
+  display:block;
+  padding-block:clamp(4px,1vw,12px);
+}
+
+.hero__meta{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(10px,2vw,20px);
+  font-size:.74rem;
+  letter-spacing:.26em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin:0;
+}
+.hero__meta .dot{ color:var(--gold-dim); }
+
+.hero__blessing{
+  font-family:var(--display);
+  font-style:italic;
+  font-size:clamp(1rem,2.2vw,1.24rem);
+  line-height:1.6;
+  color:var(--cream);
+  opacity:.82;
+  max-width:34ch;
+  margin:0;
+}
+
+/* Countdown */
+.countdown{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:clamp(14px,3.4vw,46px);
+  margin:0;
+  padding:clamp(18px,2.6vw,26px) clamp(20px,4vw,44px);
+  border:1px solid var(--hairline);
+  border-radius:2px;
+  background:rgba(27,23,43,.42);
+}
+.cd{ display:flex; flex-direction:column; align-items:center; gap:6px; min-width:58px; }
+.cd__num{
+  font-family:var(--display);
+  font-size:clamp(1.9rem,5vw,2.9rem);
+  line-height:1;
+  color:var(--gold-soft);
+  font-variant-numeric:tabular-nums;
+  font-feature-settings:"tnum";
+}
+.cd__label{
+  font-size:.58rem;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.cd__num.tick{ animation:tick .42s var(--ease); }
+@keyframes tick{
+  0%{ transform:translateY(-.24em); opacity:0; filter:blur(2px); }
+  100%{ transform:none; opacity:1; filter:blur(0); }
+}
+.countdown.is-done{ flex-direction:column; gap:4px; }
+
+.scrollcue{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  font-size:.56rem;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  color:var(--gold-dim);
+}
+.scrollcue__line{ display:block; width:1px; height:44px; background:linear-gradient(var(--gold), transparent); }
+
+/* ============================================================
+   PHOTO RIBBON
+   ============================================================ */
+.ribbon{
+  padding-block:clamp(10px,3vw,34px);
+  border-block:1px solid rgba(216,178,107,.14);
+  background:rgba(12,10,20,.4);
+  overflow:hidden;
+  position:relative;
+}
+.ribbon::before,.ribbon::after{
+  content:"";
+  position:absolute; top:0; bottom:0; width:clamp(40px,10vw,150px);
+  z-index:2; pointer-events:none;
+}
+.ribbon::before{ left:0;  background:linear-gradient(90deg,var(--night),transparent); }
+.ribbon::after{  right:0; background:linear-gradient(270deg,var(--night),transparent); }
+
+.ribbon__shift{ will-change:transform; }
+
+.ribbon__track{
+  display:flex;
+  gap:clamp(12px,1.8vw,22px);
+  width:max-content;
+  padding-block:8px;
+}
+.ribbon__track.is-drifting{ animation:drift 46s linear infinite; }
+.ribbon:hover .ribbon__track.is-drifting,
+.ribbon:focus-within .ribbon__track.is-drifting{ animation-play-state:paused; }
+@keyframes drift{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+
+.ribbon__item{
+  flex:none;
+  width:clamp(140px,20vw,228px);
+  aspect-ratio:3/4;
+  border:0; padding:0;
+  background:none;
+  cursor:pointer;
+}
+.ribbon__item--wide{ aspect-ratio:4/3; width:clamp(180px,26vw,296px); align-self:center; }
+
+/* ============================================================
+   PHOTO FRAME (shared by ribbon + gallery)
+   ============================================================ */
+.frame{
+  position:relative;
+  width:100%; height:100%;
+  overflow:hidden;
+  border-radius:1px;
+  background:linear-gradient(150deg,var(--surface-2),var(--surface));
+  box-shadow:0 1px 0 rgba(216,178,107,.12) inset;
+  transition:transform .55s var(--ease), box-shadow .55s var(--ease);
+}
+.frame img{
+  width:100%; height:100%;
+  object-fit:cover;
+  /* Faces sit above the middle of a photo, so a square crop is biased up. */
+  object-position:50% 30%;
+  filter:saturate(.86) contrast(1.02);
+  transition:transform .8s var(--ease), filter .55s var(--ease);
+}
+.frame::after{
+  content:"";
+  position:absolute; inset:0;
+  border:1px solid rgba(216,178,107,.18);
+  transition:border-color .45s var(--ease);
+  pointer-events:none;
+}
+button.ribbon__item:hover .frame,
+.tile:hover .frame,
+button.ribbon__item:focus-visible .frame,
+.tile:focus-visible .frame{
+  transform:translateY(-5px);
+  box-shadow:0 18px 40px -22px rgba(0,0,0,.9);
+}
+button.ribbon__item:hover .frame img,
+.tile:hover .frame img{ transform:scale(1.045); filter:saturate(1) contrast(1.02); }
+button.ribbon__item:hover .frame::after,
+.tile:hover .frame::after{ border-color:rgba(216,178,107,.5); }
+
+/* Placeholder shown until a real photo is dropped in */
+.frame--empty{
+  display:grid;
+  place-content:center;
+  gap:8px;
+  text-align:center;
+  padding:14px;
+  background:
+    repeating-linear-gradient(135deg, rgba(216,178,107,.05) 0 8px, transparent 8px 16px),
+    linear-gradient(150deg,var(--surface-2),var(--surface));
+}
+.frame--empty .ph-mark{
+  font-family:var(--display);
+  font-size:1.5rem;
+  color:var(--gold-dim);
+  line-height:1;
+}
+.frame--empty .ph-text{
+  font-size:.56rem;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:var(--muted);
+  line-height:1.7;
+}
+
+/* ============================================================
+   DETAILS — engraved card
+   ============================================================ */
+.details{ background:linear-gradient(180deg, rgba(12,10,20,.55), transparent 42%, rgba(12,10,20,.55)); }
+
+.card{
+  position:relative;
+  border:1px solid var(--hairline);
+  background:
+    radial-gradient(660px 330px at 50% 0%, rgba(216,178,107,.08), transparent 70%),
+    rgba(27,23,43,.6);
+  padding:clamp(30px,6vw,74px) clamp(22px,5vw,66px);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:clamp(24px,3.6vw,40px);
+  text-align:center;
+}
+/* corner flourishes */
+.card::before,.card::after{
+  content:"";
+  position:absolute;
+  width:26px; height:26px;
+  border:1px solid var(--gold);
+  opacity:.55;
+}
+.card::before{ top:10px; left:10px;  border-right:0; border-bottom:0; }
+.card::after{  bottom:10px; right:10px; border-left:0;  border-top:0; }
+
+.card__title{ font-size:clamp(1.9rem,5vw,3rem); line-height:1.08; }
+.card__title em{ font-style:italic; color:var(--gold); }
+
+.facts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(190px, 1fr));
+  gap:clamp(22px,3.6vw,42px);
+  width:100%;
+  text-align:center;
+}
+.fact{ display:flex; flex-direction:column; gap:7px; align-items:center; }
+.fact__label{
+  font-size:.6rem;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+.fact__value{
+  font-family:var(--display);
+  font-size:clamp(1.12rem,2.5vw,1.42rem);
+  line-height:1.4;
+  color:var(--cream);
+}
+.fact__note{ font-size:.82rem; color:var(--muted); line-height:1.6; }
+
+.btnrow{ display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
+
+.btn{
+  font-family:var(--body);
+  font-size:.68rem;
+  font-weight:500;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  text-decoration:none;
+  padding:14px 26px;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  background:transparent;
+  border-radius:1px;
+  cursor:pointer;
+  transition:background .35s var(--ease), color .35s var(--ease), transform .35s var(--ease);
+  display:inline-flex;
+  align-items:center;
+  gap:.7em;
+}
+.btn:hover{ background:var(--gold); color:var(--night-deep); transform:translateY(-2px); }
+.btn--solid{ background:var(--gold); color:var(--night-deep); }
+.btn--solid:hover{ background:var(--gold-soft); border-color:var(--gold-soft); }
+
+/* ============================================================
+   GALLERY
+   ============================================================ */
+.gallery__head{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:18px;
+  margin-bottom:clamp(26px,4vw,44px);
+}
+.gallery__title{ font-size:clamp(1.9rem,4.6vw,2.9rem); line-height:1.1; }
+.gallery__hint{ font-size:.78rem; color:var(--muted); margin:0; }
+
+/* Two columns, four on a wide screen. The lead photo opens on a square block
+   of four cells; with some counts the last one also closes on a wide frame.
+   The renderer picks whichever of the two tiles the photo count exactly. */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:clamp(10px,1.6vw,18px);
+}
+.tile{
+  border:0; padding:0; background:none; cursor:pointer;
+  aspect-ratio:1/1;
+}
+.grid--lead .tile:first-child,
+.grid--lead-wide .tile:first-child,
+.grid--bookend .tile:first-child,
+.grid--bookend .tile:last-child{ grid-column:span 2; grid-row:span 2; }
+.grid--lead-wide .tile:last-child{ grid-column:span 2; aspect-ratio:2/1; }
+
+@media (min-width:760px){
+  .grid{ grid-template-columns:repeat(4, 1fr); }
+
+  /* Six photos read best bookended — a large block at each end holding a
+     square of four between them. Six columns will not auto-flow into that
+     shape, so these six places are named outright. */
+  .grid--bookend{ grid-template-columns:repeat(6, 1fr); }
+  .grid--bookend .tile:first-child{ grid-column:1 / span 2; grid-row:1 / span 2; }
+  .grid--bookend .tile:nth-child(2){ grid-column:3; grid-row:1; }
+  .grid--bookend .tile:nth-child(3){ grid-column:4; grid-row:1; }
+  .grid--bookend .tile:nth-child(4){ grid-column:3; grid-row:2; }
+  .grid--bookend .tile:nth-child(5){ grid-column:4; grid-row:2; }
+  .grid--bookend .tile:last-child{ grid-column:5 / span 2; grid-row:1 / span 2; }
+}
+
+/* ============================================================
+   RSVP
+   ============================================================ */
+.contact .wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:22px;
+  text-align:center;
+}
+.contact__title{ font-size:clamp(1.9rem,5vw,3rem); line-height:1.1; }
+.contact__title em{ font-style:italic; color:var(--gold); }
+.contact__copy{ max-width:46ch; color:var(--muted); margin:0; }
+.contact__note{
+  font-size:.64rem;
+  letter-spacing:.26em;
+  text-transform:uppercase;
+  color:var(--gold-dim);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.foot{
+  padding-block:clamp(36px,5vw,60px);
+  border-top:1px solid rgba(216,178,107,.14);
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+}
+.foot__mark{
+  font-family:"Bodoni Moda","Didot","Times New Roman",serif;
+  font-size:1.5rem;
+  letter-spacing:.1em;
+}
+.foot__mark em{ font-style:italic; color:var(--gold); padding-inline:.14em; }
+.foot__note{ font-size:.62rem; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); margin:0; }
+
+/* ============================================================
+   LIGHTBOX
+   ============================================================ */
+.lightbox{
+  position:fixed; inset:0; z-index:90;
+  display:grid;
+  place-items:center;
+  padding:clamp(16px,4vw,52px);
+  background:rgba(8,6,14,.94);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  animation:lbIn .3s var(--ease);
+}
+@keyframes lbIn{ from{ opacity:0; } to{ opacity:1; } }
+.lightbox__stage{
+  max-width:min(980px,100%);
+  max-height:100%;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  align-items:center;
+  animation:lbPop .42s var(--ease);
+}
+@keyframes lbPop{ from{ transform:scale(.94) translateY(12px); opacity:0; } to{ transform:none; opacity:1; } }
+.lightbox__stage img{
+  max-height:min(74vh,720px);
+  width:auto;
+  object-fit:contain;
+  border:1px solid rgba(216,178,107,.3);
+}
+.lightbox__empty{
+  width:min(440px,82vw);
+  aspect-ratio:3/4;
+  border:1px solid rgba(216,178,107,.3);
+}
+.lightbox__cap{
+  font-family:var(--display);
+  font-style:italic;
+  font-size:1rem;
+  color:var(--cream);
+  opacity:.8;
+  text-align:center;
+  margin:0;
+}
+.lightbox__close{
+  position:absolute;
+  top:calc(14px + env(safe-area-inset-top,0px)); inset-inline-end:16px;
+  width:42px; height:42px;
+  display:grid; place-items:center;
+  border:1px solid var(--hairline);
+  background:rgba(27,23,43,.7);
+  color:var(--gold);
+  font-size:1.1rem;
+  cursor:pointer;
+  border-radius:50%;
+}
+.lightbox__nav{
+  position:absolute;
+  top:50%; transform:translateY(-50%);
+  width:44px; height:44px;
+  display:grid; place-items:center;
+  border:1px solid var(--hairline);
+  background:rgba(27,23,43,.7);
+  color:var(--gold);
+  cursor:pointer;
+  border-radius:50%;
+  font-size:1rem;
+}
+.lightbox__nav--prev{ inset-inline-start:10px; }
+.lightbox__nav--next{ inset-inline-end:10px; }
+.lightbox__close:hover,.lightbox__nav:hover{ background:var(--gold); color:var(--night-deep); }
+
+/* ============================================================
+   LANGUAGE TOGGLE — floats over the page at every scroll position
+   ============================================================ */
+.langtoggle{
+  position:fixed;
+  top:calc(12px + env(safe-area-inset-top, 0px));
+  inset-inline-end:clamp(14px,3vw,30px);
+  z-index:60;
+  display:inline-flex;
+  align-items:center;
+  gap:.6em;
+  padding:9px 16px;
+  font-family:var(--body);
+  font-size:.64rem;
+  font-weight:500;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--gold);
+  background:rgba(12,10,20,.74);
+  backdrop-filter:blur(12px) saturate(1.2);
+  -webkit-backdrop-filter:blur(12px) saturate(1.2);
+  border:1px solid var(--hairline);
+  border-radius:100px;
+  cursor:pointer;
+  transition:background .3s var(--ease), color .3s var(--ease),
+             border-color .3s var(--ease), transform .3s var(--ease);
+}
+.langtoggle:hover{
+  background:var(--gold);
+  color:var(--night-deep);
+  border-color:var(--gold);
+  transform:translateY(-1px);
+}
+.langtoggle__gem{
+  width:5px; height:5px;
+  background:currentColor;
+  transform:rotate(45deg);
+  flex:none;
+}
+:root[lang="ar"] .langtoggle{ font-size:.72rem; }
+
+/* ============================================================
+   ARABIC — different faces, no tracking (it would break the joins)
+   ============================================================ */
+:root[lang="ar"]{
+  --display:"Amiri","Bodoni Moda","Times New Roman",serif;
+  --body:"Tajawal","Jost",system-ui,sans-serif;
+}
+:root[lang="ar"] body{ font-weight:400; line-height:1.85; }
+:root[lang="ar"] .eyebrow,
+:root[lang="ar"] .hero__kicker,
+:root[lang="ar"] .hero__meta,
+:root[lang="ar"] .cd__label,
+:root[lang="ar"] .topnav a,
+:root[lang="ar"] .topbar__mark,
+:root[lang="ar"] .btn,
+:root[lang="ar"] .fact__label,
+:root[lang="ar"] .gallery__hint,
+:root[lang="ar"] .contact__note,
+:root[lang="ar"] .foot__note,
+:root[lang="ar"] .scrollcue,
+:root[lang="ar"] .curtain__word,
+:root[lang="ar"] .ph-text,
+:root[lang="ar"] .langtoggle{
+  letter-spacing:normal;
+  text-transform:none;
+}
+:root[lang="ar"] .names{
+  font-size:clamp(2.9rem,12vw,7.6rem);
+  line-height:1.14;
+}
+:root[lang="ar"] .names__amp{ font-style:normal; font-size:.44em; }
+:root[lang="ar"] .hero__blessing{ font-style:normal; }
+:root[lang="ar"] .card__title em,
+:root[lang="ar"] .contact__title em{ font-style:normal; }
+:root[lang="ar"] .topbar__mark em{ font-style:normal; }
+:root[lang="ar"] .curtain__word{ padding-inline-start:0; }
+
+/* ============================================================
+   ENTRY CURTAIN — plays once per visit, then gets out of the way
+   ============================================================ */
+.curtain{ display:none; }
+.curtain-on{ overflow:hidden; }
+.curtain-on body{ overflow:hidden; }
+.curtain-on .curtain{
+  display:block;
+  position:fixed; inset:0; z-index:100;
+  cursor:pointer;
+}
+.curtain__half{
+  position:absolute; left:0; right:0;
+  height:50.3%;
+  background:var(--night-deep);
+  z-index:1;
+  transition:transform 1s cubic-bezier(.76,0,.24,1);
+}
+.curtain__half--top{ top:0; }
+.curtain__half--bottom{ bottom:0; }
+.curtain.is-open .curtain__half--top{ transform:translateY(-100%); }
+.curtain.is-open .curtain__half--bottom{ transform:translateY(100%); }
+
+.curtain__seam{
+  position:absolute; left:0; right:0; top:50%;
+  height:1px; z-index:2;
+  background:linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold-soft) 50%, var(--gold) 70%, transparent);
+  transform:scaleX(0);
+  animation:seamOpen .95s var(--ease) .08s forwards;
+  transition:opacity .45s var(--ease);
+}
+@keyframes seamOpen{ to{ transform:scaleX(1); } }
+.curtain.is-open .curtain__seam{ opacity:0; }
+
+.curtain__core{
+  position:absolute; inset:0; z-index:3;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:clamp(14px,2.4vw,22px);
+  padding-inline:var(--gutter);
+  transition:opacity .5s var(--ease), transform .8s var(--ease);
+}
+.curtain.is-open .curtain__core{ opacity:0; transform:scale(1.07); }
+
+.curtain .seal{ width:clamp(72px,10.5vw,102px); animation:settle .55s var(--ease) both; }
+.curtain .seal .seal__ring,
+.curtain .seal .seal__ring-2,
+.curtain .seal .seal__leaf{
+  stroke-dasharray:var(--len,400);
+  stroke-dashoffset:var(--len,400);
+  animation:draw .9s var(--ease) .12s forwards;
+}
+.curtain .seal__letters{ animation:settle .5s var(--ease) .48s both; }
+
+.curtain__word{
+  font-size:.66rem;
+  font-weight:500;
+  letter-spacing:.44em;
+  text-transform:uppercase;
+  color:var(--muted);
+  padding-inline-start:.44em;
+  text-align:center;
+  animation:settle .7s var(--ease) .6s both;
+}
+
+/* ============================================================
+   SECTION SEAMS — a drawn flourish stitching one section to the next
+   ============================================================ */
+.seam{
+  display:flex;
+  justify-content:center;
+  padding-block:clamp(26px,5vw,54px);
+  padding-inline:var(--gutter);
+}
+.seam svg{ width:min(340px,72%); height:auto; overflow:visible; }
+.seam path{
+  fill:none;
+  stroke:var(--gold);
+  stroke-width:1;
+  vector-effect:non-scaling-stroke;
+  transform-box:fill-box;
+  transform-origin:50% 50%;
+}
+.seam .seam__line{ opacity:.42; }
+.seam .seam__gem--core{ fill:var(--gold); stroke:none; }
+.seam .seam__gem--side{ fill:none; stroke:var(--gold-dim); stroke-width:1; }
+
+.js .seam.anim{ opacity:1; }
+.js .seam__line--l{ transform:scaleX(0); transform-origin:100% 50%; }
+.js .seam__line--r{ transform:scaleX(0); transform-origin:0% 50%; }
+.js .seam.anim--in .seam__line{ animation:seamLine 1.05s var(--ease) both; }
+@keyframes seamLine{ to{ transform:scaleX(1); } }
+
+.js .seam__gem{ opacity:0; transform:rotate(-135deg) scale(.25); }
+.js .seam.anim--in .seam__gem{ animation:gemIn .75s var(--ease) .3s forwards; }
+@keyframes gemIn{ to{ opacity:1; transform:none; } }
+.js .seam.anim--in .seam__gem--side{ animation-delay:.52s; }
+
+/* ============================================================
+   MOTION — page renders fully at rest; JS opts in to animation
+   ============================================================ */
+.js .anim{ opacity:0; }
+.js .anim--up{ transform:translateY(22px); }
+.js .anim--in{
+  animation:settle .95s var(--ease) both;
+  animation-delay:var(--d,0ms);
+}
+@keyframes settle{ from{ opacity:0; transform:translateY(22px); } to{ opacity:1; transform:none; } }
+
+/* Headings uncover themselves upward, like type lifted off a press */
+.js .anim--wipe{ opacity:1; clip-path:inset(0 0 108% 0); transform:translateY(9px); }
+.js .anim--wipe.anim--in{ animation:wipeUp 1s var(--ease) both; animation-delay:var(--d,0ms); }
+@keyframes wipeUp{
+  from{ clip-path:inset(0 0 108% 0); transform:translateY(9px); }
+  to{ clip-path:inset(-25% -25% -25% -25%); transform:none; }
+}
+
+/* Gallery tiles develop in, one after the next */
+.js .anim--tile{ opacity:0; clip-path:inset(0 0 100% 0); transform:translateY(14px) scale(.965); }
+.js .anim--tile.anim--in{ animation:tileIn .9s var(--ease) both; animation-delay:var(--d,0ms); }
+@keyframes tileIn{
+  from{ opacity:0; clip-path:inset(0 0 100% 0); transform:translateY(14px) scale(.965); }
+  to{ opacity:1; clip-path:inset(-2% -2% -2% -2%); transform:none; }
+}
+
+/* The details card draws its own corners */
+.js .card::before,.js .card::after{ width:0; height:0; }
+.js .card.anim--in::before,.js .card.anim--in::after{ animation:corner .85s var(--ease) .4s forwards; }
+@keyframes corner{ to{ width:26px; height:26px; } }
+
+/* Hero load sequence */
+.js.ready .hero .seal{ animation:settle .6s var(--ease) both; }
+.js.ready .hero .seal .seal__ring,
+.js.ready .hero .seal .seal__ring-2,
+.js.ready .hero .seal .seal__leaf{
+  stroke-dasharray:var(--len,400);
+  stroke-dashoffset:var(--len,400);
+  animation:draw .95s var(--ease) .08s forwards;
+}
+@keyframes draw{ to{ stroke-dashoffset:0; } }
+.js.ready .hero .seal__letters{ animation:settle .5s var(--ease) .5s both; }
+.js.ready .hero__kicker{ animation:settle .6s var(--ease) .18s both; }
+.js.ready .names .ln{ display:block; animation:settle .7s var(--ease) both; }
+.js.ready .names .ln-1{ animation-delay:.26s; }
+.js.ready .names .names__amp{ animation:settle .6s var(--ease) .38s both; }
+.js.ready .names .ln-2{ animation-delay:.48s; }
+.js.ready .hero__meta{ animation:settle .6s var(--ease) .62s both; }
+.js.ready .hero__blessing{ animation:settle .6s var(--ease) .7s both; }
+.js.ready .hero .countdown{ animation:settle .65s var(--ease) .8s both; }
+.js.ready .hero .scrollcue{ animation:settle .6s var(--ease) .92s both; }
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+  }
+  .js .anim{ opacity:1 !important; transform:none !important; clip-path:none !important; }
+  .curtain{ display:none !important; }
+}
+</style>
+
+</head>
+
+<body>
+
+<script>
+  /* Opt in to motion only when JS runs and the viewer welcomes it.
+     Without this class the page renders in its finished, readable state. */
+  (function () {
+    var root = document.documentElement;
+    var motionOK = true;
+    try { motionOK = !window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    if (!motionOK) return;           /* stay at rest, fully readable */
+    root.classList.add('js');
+
+    /* The entry curtain is a first-impression, not a toll booth: once a
+       visit, then straight to the page for every reload after that. */
+    var seen = false;
+    try { seen = sessionStorage.getItem('as-intro') === '1'; } catch (e) {}
+    root.classList.add(seen ? 'ready' : 'curtain-on');
+  })();
+</script>
+
+<button class="langtoggle" id="langToggle" type="button">
+  <span class="langtoggle__gem" aria-hidden="true"></span>
+  <span id="langLabel">&#1593;&#1585;&#1576;&#1610;</span>
+</button>
+
+<div class="curtain" id="curtain" aria-hidden="true">
+  <div class="curtain__half curtain__half--top"></div>
+  <div class="curtain__half curtain__half--bottom"></div>
+  <div class="curtain__seam"></div>
+  <div class="curtain__core">
+    <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+      <circle class="seal__ring" cx="60" cy="60" r="52" style="--len:327"></circle>
+      <circle class="seal__ring-2" cx="60" cy="60" r="45" style="--len:283"></circle>
+      <path class="seal__leaf" d="M60 17 C 51 26, 51 34, 60 42 C 69 34, 69 26, 60 17 Z" style="--len:96"></path>
+      <path class="seal__leaf" d="M60 103 C 51 94, 51 86, 60 78 C 69 86, 69 94, 60 103 Z" style="--len:96"></path>
+      <path class="seal__leaf" d="M24 60 h 10" style="--len:10"></path>
+      <path class="seal__leaf" d="M86 60 h 10" style="--len:10"></path>
+      <text class="seal__letters" x="60" y="69">A&#160;&amp;&#160;S</text>
+    </svg>
+    <span class="curtain__word" id="curtainWord">Andrew &amp; Sarah</span>
+  </div>
+</div>
+
+<script>
+  /* Drives the entry sequence. Every exit is guarded by a timer, so a slow
+     font or a thrown error can never leave a visitor staring at a closed door. */
+  (function () {
+    var root = document.documentElement;
+    if (!root.classList.contains('curtain-on')) return;
+
+    var curtain = document.getElementById('curtain');
+    var opened = false;
+
+    function open() {
+      if (opened) return;
+      opened = true;
+      try { sessionStorage.setItem('as-intro', '1'); } catch (e) {}
+      if (curtain) curtain.classList.add('is-open');
+      root.classList.add('ready');          /* hero starts as the doors part */
+      setTimeout(function () {
+        root.classList.remove('curtain-on');
+        if (curtain) curtain.remove();
+      }, 1100);
+    }
+
+    setTimeout(open, 1650);                 /* the intended cue */
+    setTimeout(open, 4000);                 /* hard stop, whatever went wrong */
+    if (curtain) curtain.addEventListener('click', open);
+    document.addEventListener('keydown', open, { once: true });
+  })();
+</script>
+
+<header class="topbar" id="topbar">
+  <a class="topbar__mark" href="#top">Andrew <em>&amp;</em> Sarah</a>
+  <nav class="topnav">
+    <a href="#details" data-ui="navDay">The day</a>
+    <a href="#gallery" data-ui="navGallery">Gallery</a>
+    <a class="topnav__cta" href="#contact" data-ui="navContact">Contact</a>
+  </nav>
+  <div class="topbar__progress" id="progress"></div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <canvas id="motes" aria-hidden="true"></canvas>
+    <div class="wrap">
+
+      <svg class="seal" viewBox="0 0 120 120" role="img" aria-label="Monogram of Andrew and Sarah">
+        <circle class="seal__ring" cx="60" cy="60" r="52" style="--len:327"></circle>
+        <circle class="seal__ring-2" cx="60" cy="60" r="45" style="--len:283"></circle>
+        <path class="seal__leaf" d="M60 17 C 51 26, 51 34, 60 42 C 69 34, 69 26, 60 17 Z" style="--len:96"></path>
+        <path class="seal__leaf" d="M60 103 C 51 94, 51 86, 60 78 C 69 86, 69 94, 60 103 Z" style="--len:96"></path>
+        <path class="seal__leaf" d="M24 60 h 10" style="--len:10"></path>
+        <path class="seal__leaf" d="M86 60 h 10" style="--len:10"></path>
+        <text class="seal__letters" x="60" y="70">A&#160;&amp;&#160;S</text>
+      </svg>
+
+      <p class="hero__kicker" id="kicker">We're engaged</p>
+
+      <h1 class="names">
+        <span class="ln ln-1" id="name1">Andrew</span>
+        <span class="names__amp" aria-hidden="true">&amp;</span>
+        <span class="ln ln-2" id="name2">Sarah</span>
+      </h1>
+
+      <p class="hero__meta">
+        <span id="heroDate">Saturday, 12 December 2026</span>
+        <span class="dot" aria-hidden="true">&#9670;</span>
+        <span id="heroPlace">Cairo, Egypt</span>
+      </p>
+
+      <p class="hero__blessing" id="blessing">
+        &ldquo;Therefore what God has joined together, let no one separate.&rdquo;
+      </p>
+
+      <div class="countdown" id="countdown" aria-live="polite"></div>
+
+      <div class="scrollcue" aria-hidden="true">
+        <span class="scrollcue__line"></span>
+        <span data-ui="scroll">Scroll</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RIBBON ================= -->
+  <section class="ribbon" aria-label="Photo ribbon">
+    <div class="ribbon__shift" id="ribbonShift">
+      <div class="ribbon__track" id="ribbon"></div>
+    </div>
+  </section>
+
+  <div class="seam anim" aria-hidden="true">
+    <svg viewBox="0 0 260 24">
+      <path class="seam__line seam__line--l" d="M2 12 H 88"></path>
+      <path class="seam__gem seam__gem--side" d="M104 6 L110 12 L104 18 L98 12 Z"></path>
+      <path class="seam__gem seam__gem--core" d="M130 3 L139 12 L130 21 L121 12 Z"></path>
+      <path class="seam__gem seam__gem--side" d="M156 6 L162 12 L156 18 L150 12 Z"></path>
+      <path class="seam__line seam__line--r" d="M172 12 H 258"></path>
+    </svg>
+  </div>
+
+  <!-- ================= DETAILS ================= -->
+  <section class="details section-pad" id="details">
+    <div class="wrap">
+      <div class="card anim anim--up">
+        <p class="eyebrow" data-ui="detailsEyebrow">The celebration</p>
+        <h2 class="card__title" data-uihtml="detailsTitle">Come <em>celebrate</em> with us.</h2>
+        <hr class="rule" style="width:100%">
+        <div class="facts" id="facts"></div>
+        <div class="btnrow" id="detailActions"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+
+  <div class="seam anim" aria-hidden="true">
+    <svg viewBox="0 0 260 24">
+      <path class="seam__line seam__line--l" d="M2 12 H 88"></path>
+      <path class="seam__gem seam__gem--side" d="M104 6 L110 12 L104 18 L98 12 Z"></path>
+      <path class="seam__gem seam__gem--core" d="M130 3 L139 12 L130 21 L121 12 Z"></path>
+      <path class="seam__gem seam__gem--side" d="M156 6 L162 12 L156 18 L150 12 Z"></path>
+      <path class="seam__line seam__line--r" d="M172 12 H 258"></path>
+    </svg>
+  </div>
+  <section class="gallery section-pad" id="gallery">
+    <div class="wrap">
+      <div class="gallery__head">
+        <div>
+          <p class="eyebrow anim anim--up" data-ui="galleryEyebrow">Us, lately</p>
+          <h2 class="gallery__title anim anim--wipe" data-ui="galleryTitle">The gallery</h2>
+        </div>
+        <p class="gallery__hint anim anim--up" data-ui="galleryHint">Tap any photo to open it.</p>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <!-- ================= RSVP ================= -->
+
+  <div class="seam anim" aria-hidden="true">
+    <svg viewBox="0 0 260 24">
+      <path class="seam__line seam__line--l" d="M2 12 H 88"></path>
+      <path class="seam__gem seam__gem--side" d="M104 6 L110 12 L104 18 L98 12 Z"></path>
+      <path class="seam__gem seam__gem--core" d="M130 3 L139 12 L130 21 L121 12 Z"></path>
+      <path class="seam__gem seam__gem--side" d="M156 6 L162 12 L156 18 L150 12 Z"></path>
+      <path class="seam__line seam__line--r" d="M172 12 H 258"></path>
+    </svg>
+  </div>
+  <section class="contact section-pad" id="contact">
+    <div class="wrap">
+      <p class="eyebrow anim anim--up" data-ui="contactEyebrow">One last thing</p>
+      <h2 class="contact__title anim anim--wipe" data-uihtml="contactTitle">You will <em>be there</em>.</h2>
+      <p class="contact__copy anim anim--up" id="contactCopy">
+        Send us a message with your name and how many are coming, so we can save your seats.
+      </p>
+      <div class="btnrow anim anim--up" id="contactActions"></div>
+      <p class="contact__note anim anim--up" id="contactNote"></p>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap" style="display:flex;flex-direction:column;align-items:center;gap:10px">
+      <p class="foot__mark">A <em>&amp;</em> S</p>
+      <p class="foot__note" id="footNote">Cairo &#183; 2026</p>
+    </div>
+  </footer>
+
+</main>
+
+<script>
+/* ============================================================================
+   EDIT EVERYTHING HERE  —  الجزء الذي تُعدّله
+   ----------------------------------------------------------------------------
+   Every word the page shows comes from this one block. Anything written as
+   { en: "...", ar: "..." } appears in both languages — the button floating at
+   the top of the page switches between them. Change the text between the
+   quotes and the whole page follows.
+   ========================================================================== */
+const EVENT = {
+
+  /* --- Names, as they appear in the big headline --- */
+  names: {
+    one: { en: "Andrew", ar: "أندرو" },
+    two: { en: "Sarah",  ar: "ساره" }
+  },
+  kicker: { en: "We're engaged", ar: "خطوبتنا" },
+
+  /* --- The monogram. This is the logo: it stays exactly this in both
+         languages, on the seal, in the opening curtain and in the footer. --- */
+  monogram: { one: "A", two: "S" },
+
+  /* --- Date and time of the party. Format: "YYYY-MM-DDTHH:MM:SS+HH:MM",
+         24-hour clock. The "+03:00" on the end is Cairo's offset, and it is
+         what makes the countdown read the same for a guest in Egypt and a
+         guest abroad. Without it, every phone would count down to 8pm in its
+         OWN city. Cairo is +03:00 in summer and +02:00 from late October. --- */
+  startsAt: "2026-09-26T20:00:00+03:00",
+
+  /* --- How that date reads on the page --- */
+  dateLabel: { en: "Saturday, 26 September 2026", ar: "السبت ٢٦ سبتمبر ٢٠٢٦" },
+  timeLabel: { en: "8:00 in the evening",         ar: "الثامنة مساءً" },
+
+  /* --- Where --- */
+  city:      { en: "Assiut, Egypt",            ar: "أسيوط، مصر" },
+  venueName: { en: "Maryland Wedding Hall",    ar: "قاعة المريلاند للأفراح" },
+  venueLine: { en: "Al Walideyah Al Westaneyah, Assiut",
+               ar: "الوليدية الوسطانية، قسم ثان أسيوط" },
+  /* An extra line under the address — a landmark, parking, which gate.
+     Leave both empty and the line disappears. */
+  venueNote: { en: "", ar: "" },
+  mapsUrl:   "https://www.google.com/maps/search/?api=1&query=55R9%2BPPJ%20Assiut",
+
+  /* --- Dress code --- */
+  dressCode: { en: "Formal", ar: "رسمي" },
+  dressNote: { en: "", ar: "" },
+
+  /* --- The line under the names. Set both to "" to remove it. --- */
+  blessing: { en: "“Therefore what God has joined together, let no one separate.”",
+              ar: "«فالذي جمعه الله لا يفرقه إنسان.»" },
+
+  /* --- How guests reach you --- */
+  contact: {
+    copy: { en: "If you have any inquiries, contact us.",
+            ar: "لأي استفسار، تواصلوا معنا." },
+    note: { en: "Call, message or email — whichever is easiest.",
+            ar: "اتصلوا أو راسلونا، كما يناسبكم." },
+
+    phone:        "+201202855058",   /* international form, for the call button */
+    phoneDisplay: "0120 285 5058",   /* how the number is shown on the page   */
+    whatsapp:     "201202855058",    /* country code + number, digits only    */
+    email:        "andrew.gergeus@gmail.com",
+
+    message: { en: "Hi Andrew & Sarah! Congratulations — I have a question about the engagement.",
+               ar: "ألف مبروك! عندي استفسار بخصوص الخطوبة." }
+  },
+
+  /* --- PHOTOS ---
+     Drop your images into the "photos" folder next to this file, then put the
+     filename in src. Until then a placeholder holds the slot.
+     Example: { src: "photos/01.jpg", alt: "Us by the Nile",
+                caption: { en: "The night of the question", ar: "ليلة السؤال" } }
+  --------------------------------------------------------------------------- */
+  photos: [
+    { src: "photos/01-we-said-yes.jpg",
+      alt: "Andrew and Sarah under the flower arch on the night of the engagement",
+      caption: { en: "We said yes", ar: "قلنا نعم" } },
+
+    /* wide: true marks a photo shot landscape, so the drifting ribbon
+       gives it a landscape frame instead of a portrait one. */
+    { src: "photos/02-dinner-outside.jpg", wide: true,
+      alt: "Andrew and Sarah at a garden restaurant",
+      caption: { en: "Dinner under the trees", ar: "عشاء تحت الشجر" } },
+
+    { src: "photos/03-golden-hour.jpg",
+      alt: "Andrew and Sarah outside at sunset",
+      caption: { en: "Golden hour", ar: "ساعة الغروب" } },
+
+    { src: "photos/04-our-coffee.jpg",
+      alt: "Andrew and Sarah at their usual coffee place",
+      caption: { en: "Our usual coffee", ar: "قهوتنا المعتادة" } },
+
+    { src: "photos/05-an-ordinary-afternoon.jpg",
+      alt: "Andrew and Sarah on an ordinary afternoon out",
+      caption: { en: "An ordinary afternoon", ar: "عصر يوم عادي" } },
+
+    { src: "photos/06-we-found-love.jpg",
+      alt: "Andrew and Sarah seated under the flower arch on the night of the engagement",
+      caption: { en: "We found love", ar: "وجدنا الحب" } }
+  ]
+};
+
+/* --- Wording of the page's own labels, in both languages --- */
+const UI = {
+  en: {
+    navDay: "The day", navGallery: "Gallery", navContact: "Contact",
+    scroll: "Scroll",
+    detailsEyebrow: "The celebration",
+    detailsTitle: "Come <em>celebrate</em> with us.",
+    galleryEyebrow: "Us, lately", galleryTitle: "The gallery",
+    galleryHint: "Tap any photo to open it.",
+    contactEyebrow: "One last thing",
+    contactTitle: "You will <em>be there</em>.",
+    when: "When", where: "Where", dress: "Dress code",
+    days: "Days", hours: "Hours", minutes: "Minutes", seconds: "Seconds",
+    today: "Today", celebrating: "We are celebrating",
+    openMap: "Open the map", addCalendar: "Add to calendar",
+    callUs: "Call us", whatsapp: "Message on WhatsApp", emailUs: "Send an email",
+    photoHere: "Photo # goes here", openPhoto: "Open photo #",
+    close: "Close", prevPhoto: "Previous photo", nextPhoto: "Next photo",
+    calendarTitle: "# & # — Engagement",
+    calendarNote: "We can't wait to see you there.",
+    emailSubject: "About the engagement",
+    otherLanguage: "عربي", switchLanguage: "Switch to Arabic"
+  },
+  ar: {
+    navDay: "اليوم", navGallery: "الصور", navContact: "تواصلوا معنا",
+    scroll: "انزل",
+    detailsEyebrow: "الاحتفال",
+    detailsTitle: "شاركونا <em>فرحتنا</em>.",
+    galleryEyebrow: "نحن، مؤخرًا", galleryTitle: "معرض الصور",
+    galleryHint: "اضغط على أي صورة لفتحها.",
+    contactEyebrow: "أخيرًا",
+    contactTitle: "ستكونون <em>معنا</em>.",
+    when: "الموعد", where: "المكان", dress: "الزي",
+    days: "يوم", hours: "ساعة", minutes: "دقيقة", seconds: "ثانية",
+    today: "اليوم", celebrating: "نحتفل اليوم",
+    openMap: "افتح الخريطة", addCalendar: "أضف إلى التقويم",
+    callUs: "اتصلوا بنا", whatsapp: "راسلونا على واتساب", emailUs: "راسلونا بالبريد",
+    photoHere: "الصورة # هنا", openPhoto: "افتح الصورة #",
+    close: "إغلاق", prevPhoto: "الصورة السابقة", nextPhoto: "الصورة التالية",
+    calendarTitle: "خطوبة # و #",
+    calendarNote: "في انتظاركم.",
+    emailSubject: "بخصوص الخطوبة",
+    otherLanguage: "English", switchLanguage: "التبديل إلى الإنجليزية"
+  }
+};
+/* ======================= END OF THE PART YOU EDIT ========================= */
+
+
+/* ---------------------------------------------------------------------------
+   LANGUAGE
+   ------------------------------------------------------------------------ */
+const $ = (sel) => document.querySelector(sel);
+const esc = (str) => String(str == null ? "" : str).replace(/[&<>"']/g, (c) => (
+  { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
+));
+
+/* A bilingual field is {en, ar}; a plain string is the same in both. */
+const T = (field) => {
+  if (field && typeof field === "object" && !Array.isArray(field)) {
+    return field[LANG] != null ? field[LANG] : (field.en || "");
+  }
+  return field == null ? "" : field;
+};
+
+/* A remembered choice wins; otherwise an Arabic browser opens in Arabic. */
+function firstLanguage() {
+  try {
+    const saved = localStorage.getItem("as-lang");
+    if (saved === "ar" || saved === "en") return saved;
+  } catch (e) { /* storage blocked: fall through to the browser's own setting */ }
+  try {
+    if ((navigator.language || "").toLowerCase().indexOf("ar") === 0) return "ar";
+  } catch (e) {}
+  return "en";
+}
+
+let LANG = firstLanguage();
+let ui = UI[LANG];
+
+/* Labels that carry a value inside them are written with # as the slot. */
+const fill = (template, ...values) => {
+  let n = -1;
+  return String(template).replace(/#/g, () => { n += 1; return values[n] != null ? values[n] : ""; });
+};
+
+
+/* ---------------------------------------------------------------------------
+   RENDER — runs once on load, and again whenever the language changes
+   ------------------------------------------------------------------------ */
+function render() {
+  ui = UI[LANG];
+  const one = T(EVENT.names.one);
+  const two = T(EVENT.names.two);
+  const joiner = LANG === "ar" ? "و" : "&";
+
+  document.documentElement.lang = LANG;
+  document.documentElement.dir = LANG === "ar" ? "rtl" : "ltr";
+  document.title = one + " " + joiner + " " + two;
+
+  /* Every label marked with a key in the HTML */
+  document.querySelectorAll("[data-ui]").forEach((el) => {
+    el.textContent = ui[el.dataset.ui] || "";
+  });
+  document.querySelectorAll("[data-uihtml]").forEach((el) => {
+    el.innerHTML = ui[el.dataset.uihtml] || "";
+  });
+
+  /* Hero */
+  $("#name1").textContent = one;
+  $("#name2").textContent = two;
+  $(".names__amp").textContent = joiner;
+  $("#kicker").textContent = T(EVENT.kicker);
+  $("#heroDate").textContent = T(EVENT.dateLabel);
+  $("#heroPlace").textContent = T(EVENT.city);
+  $(".topbar__mark").innerHTML = esc(one) + " <em>" + esc(joiner) + "</em> " + esc(two);
+  $("#footNote").textContent = T(EVENT.city).split("،")[0].split(",")[0] +
+    " · " + new Date(EVENT.startsAt).getFullYear();
+
+  /* The monogram is the logo, so it reads the same in every language. */
+  const mark = EVENT.monogram;
+  document.querySelectorAll(".seal__letters").forEach((el) => {
+    el.textContent = mark.one + "\u00A0&\u00A0" + mark.two;
+  });
+  $(".foot__mark").innerHTML = esc(mark.one) + " <em>&amp;</em> " + esc(mark.two);
+
+  const curtainWord = $("#curtainWord");
+  if (curtainWord) curtainWord.textContent = one + " " + joiner + " " + two;
+
+  const blessing = $("#blessing");
+  if (blessing) {
+    const text = T(EVENT.blessing);
+    if (text) { blessing.textContent = text; } else { blessing.remove(); }
+  }
+
+  /* Language button: it always names the language you'd be switching TO */
+  $("#langLabel").textContent = ui.otherLanguage;
+  $("#langToggle").setAttribute("aria-label", ui.switchLanguage);
+  $("#langToggle").setAttribute("lang", LANG === "ar" ? "en" : "ar");
+
+  renderRibbon();
+  renderDetails();
+  renderContact();
+  renderGallery();
+  buildCountdown();
+}
+
+
+/* --- A photo frame: the real image, or a placeholder holding its slot --- */
+function frame(photo, index) {
+  if (photo.src) {
+    return '<div class="frame"><img src="' + esc(photo.src) + '" alt="' +
+      esc(photo.alt || T(photo.caption) || T(EVENT.names.one)) + '" loading="lazy"></div>';
+  }
+  const label = esc(fill(ui.photoHere, index + 1)).replace(/\s(?=\S+$)/, "<br>");
+  return '<div class="frame frame--empty">' +
+    '<span class="ph-mark">&#9670;</span>' +
+    '<span class="ph-text">' + label + '</span>' +
+    '</div>';
+}
+
+function renderRibbon() {
+  const track = $("#ribbon");
+  const items = EVENT.photos.map((photo, i) =>
+    '<button class="ribbon__item' + (photo.wide ? " ribbon__item--wide" : "") +
+    '" type="button" data-photo="' + i + '" aria-label="' +
+    esc(fill(ui.openPhoto, i + 1)) + '">' + frame(photo, i) + '</button>'
+  ).join("");
+  track.innerHTML = items + items;      /* twice over, so the drift loops seamlessly */
+  track.classList.toggle("is-drifting",
+    document.documentElement.classList.contains("js") && EVENT.photos.length > 2);
+}
+
+function renderDetails() {
+  const venueNote = T(EVENT.venueNote);
+  const facts = [
+    { label: ui.when,  value: T(EVENT.dateLabel), note: esc(T(EVENT.timeLabel)) },
+    { label: ui.where, value: T(EVENT.venueName),
+      note: esc(T(EVENT.venueLine)) + (venueNote ? "<br>" + esc(venueNote) : "") },
+    { label: ui.dress, value: T(EVENT.dressCode), note: esc(T(EVENT.dressNote)) }
+  ];
+  $("#facts").innerHTML = facts.filter((f) => f.value).map((f) =>
+    '<div class="fact">' +
+      '<span class="fact__label">' + esc(f.label) + '</span>' +
+      '<span class="fact__value">' + esc(f.value) + '</span>' +
+      (f.note ? '<span class="fact__note">' + f.note + '</span>' : "") +
+    '</div>'
+  ).join("");
+
+  const actions = [];
+  if (EVENT.mapsUrl) {
+    actions.push('<a class="btn" href="' + esc(EVENT.mapsUrl) +
+      '" target="_blank" rel="noopener">' + esc(ui.openMap) + '</a>');
+  }
+  actions.push('<button class="btn btn--solid" type="button" id="addCal">' +
+    esc(ui.addCalendar) + '</button>');
+  $("#detailActions").innerHTML = actions.join("");
+  $("#addCal").addEventListener("click", addToCalendar);
+}
+
+function renderContact() {
+  const c = EVENT.contact;
+  $("#contactCopy").textContent = T(c.copy);
+
+  const actions = [];
+  if (c.whatsapp) {
+    actions.push('<a class="btn btn--solid" href="https://wa.me/' + esc(c.whatsapp) +
+      '?text=' + encodeURIComponent(T(c.message)) +
+      '" target="_blank" rel="noopener">' + esc(ui.whatsapp) + '</a>');
+  }
+  if (c.phone) {
+    actions.push('<a class="btn" href="tel:' + esc(c.phone) + '">' + esc(ui.callUs) +
+      ' <span dir="ltr">' + esc(c.phoneDisplay || c.phone) + '</span></a>');
+  }
+  if (c.email) {
+    actions.push('<a class="btn" href="mailto:' + esc(c.email) +
+      '?subject=' + encodeURIComponent(ui.emailSubject) +
+      '&body=' + encodeURIComponent(T(c.message)) + '">' + esc(ui.emailUs) + '</a>');
+  }
+  $("#contactActions").innerHTML = actions.join("");
+  $("#contactNote").textContent = T(c.note);
+}
+
+function renderGallery() {
+  /* Compositions that leave no empty cells: a block at each end tiles 6;
+     a lead block on its own tiles 5, 9 or 13; a lead block with a wide
+     closer tiles 4, 8 or 12. Other counts fall back to plain squares. */
+  const count = EVENT.photos.length;
+  const grid = $("#grid");
+  grid.classList.toggle("grid--bookend", count === 6);
+  grid.classList.toggle("grid--lead", count % 4 === 1);
+  grid.classList.toggle("grid--lead-wide", count % 4 === 0);
+
+  grid.innerHTML = EVENT.photos.map((photo, i) =>
+    '<button class="tile anim anim--tile" type="button" data-photo="' + i + '" aria-label="' +
+    esc(fill(ui.openPhoto, i + 1)) + '">' + frame(photo, i) + '</button>'
+  ).join("");
+}
+
+
+/* ---------------------------------------------------------------------------
+   COUNTDOWN
+   ------------------------------------------------------------------------ */
+const target = new Date(EVENT.startsAt).getTime();
+const UNITS = ["days", "hours", "minutes", "seconds"];
+let cdNodes = {};
+let countdownRunning = false;
+
+function buildCountdown() {
+  const box = $("#countdown");
+  if (!box) return;
+  box.classList.remove("is-done");
+  box.innerHTML = UNITS.map((key) =>
+    '<div class="cd"><span class="cd__num" id="cd-' + key + '">--</span>' +
+    '<span class="cd__label">' + esc(ui[key]) + '</span></div>'
+  ).join("");
+  cdNodes = {};
+  UNITS.forEach((key) => { cdNodes[key] = $("#cd-" + key); });
+  tickCountdown();
+  if (!countdownRunning) {
+    countdownRunning = true;
+    setInterval(tickCountdown, 1000);
+  }
+}
+
+const pad = (n) => String(n).padStart(2, "0");
+
+function tickCountdown() {
+  const box = $("#countdown");
+  if (!box) return;
+  if (!isFinite(target)) { box.remove(); return; }
+
+  const left = target - Date.now();
+  if (left <= 0) {
+    box.classList.add("is-done");
+    box.innerHTML = '<div class="cd" style="min-width:0">' +
+      '<span class="cd__num">' + esc(ui.today) + '</span>' +
+      '<span class="cd__label">' + esc(ui.celebrating) + '</span></div>';
+    cdNodes = {};
+    return;
+  }
+
+  const s = Math.floor(left / 1000);
+  const next = {
+    days: String(Math.floor(s / 86400)),
+    hours: pad(Math.floor(s / 3600) % 24),
+    minutes: pad(Math.floor(s / 60) % 60),
+    seconds: pad(s % 60)
+  };
+  UNITS.forEach((key) => {
+    const node = cdNodes[key];
+    if (node && node.textContent !== next[key]) {
+      node.textContent = next[key];
+      node.classList.remove("tick");
+      void node.offsetWidth;
+      node.classList.add("tick");
+    }
+  });
+}
+
+
+/* ---------------------------------------------------------------------------
+   ADD TO CALENDAR — opens Google Calendar with everything pre-filled
+   ------------------------------------------------------------------------ */
+function addToCalendar() {
+  const start = new Date(EVENT.startsAt);
+  const end = new Date(start.getTime() + 4 * 60 * 60 * 1000);
+  const stamp = (d) => d.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+  const where = [T(EVENT.venueName), T(EVENT.venueLine), T(EVENT.city)].filter(Boolean).join(", ");
+  const url = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+    "&text=" + encodeURIComponent(fill(ui.calendarTitle, T(EVENT.names.one), T(EVENT.names.two))) +
+    "&dates=" + stamp(start) + "/" + stamp(end) +
+    "&location=" + encodeURIComponent(where) +
+    "&details=" + encodeURIComponent(ui.calendarNote);
+  window.open(url, "_blank", "noopener");
+}
+
+
+/* ---------------------------------------------------------------------------
+   LIGHTBOX
+   ------------------------------------------------------------------------ */
+let lightbox = null;
+let currentPhoto = 0;
+let lastFocused = null;
+
+function renderLightboxStage() {
+  const photo = EVENT.photos[currentPhoto];
+  const caption = T(photo.caption);
+  const media = photo.src
+    ? '<img src="' + esc(photo.src) + '" alt="' + esc(photo.alt || caption) + '">'
+    : '<div class="lightbox__empty frame frame--empty">' +
+      '<span class="ph-mark">&#9670;</span>' +
+      '<span class="ph-text">' + esc(fill(ui.photoHere, currentPhoto + 1)) + '</span></div>';
+  lightbox.querySelector(".lightbox__stage").innerHTML =
+    media + (caption ? '<p class="lightbox__cap">' + esc(caption) + '</p>' : "");
+}
+
+function openLightbox(index) {
+  currentPhoto = index;
+  lastFocused = document.activeElement;
+  const rtl = LANG === "ar";
+
+  lightbox = document.createElement("div");
+  lightbox.className = "lightbox";
+  lightbox.setAttribute("role", "dialog");
+  lightbox.setAttribute("aria-modal", "true");
+  lightbox.innerHTML =
+    '<button class="lightbox__close" type="button" aria-label="' + esc(ui.close) + '">&#10005;</button>' +
+    '<button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="' +
+      esc(ui.prevPhoto) + '">' + (rtl ? "&#10095;" : "&#10094;") + '</button>' +
+    '<button class="lightbox__nav lightbox__nav--next" type="button" aria-label="' +
+      esc(ui.nextPhoto) + '">' + (rtl ? "&#10094;" : "&#10095;") + '</button>' +
+    '<div class="lightbox__stage"></div>';
+  document.body.appendChild(lightbox);
+  renderLightboxStage();
+  lightbox.querySelector(".lightbox__close").focus();
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox || e.target.closest(".lightbox__close")) return closeLightbox();
+    if (e.target.closest(".lightbox__nav--prev")) step(-1);
+    if (e.target.closest(".lightbox__nav--next")) step(1);
+  });
+}
+
+function step(delta) {
+  currentPhoto = (currentPhoto + delta + EVENT.photos.length) % EVENT.photos.length;
+  renderLightboxStage();
+}
+
+function closeLightbox() {
+  if (!lightbox) return;
+  lightbox.remove();
+  lightbox = null;
+  if (lastFocused && lastFocused.focus) lastFocused.focus();
+}
+
+document.addEventListener("click", (e) => {
+  const trigger = e.target.closest("[data-photo]");
+  if (trigger && !lightbox) openLightbox(Number(trigger.dataset.photo));
+});
+
+document.addEventListener("keydown", (e) => {
+  if (!lightbox) return;
+  if (e.key === "Escape") closeLightbox();
+  /* The arrow keys follow the reading direction, not the keycap. */
+  const forward = LANG === "ar" ? "ArrowLeft" : "ArrowRight";
+  const back = LANG === "ar" ? "ArrowRight" : "ArrowLeft";
+  if (e.key === forward) step(1);
+  if (e.key === back) step(-1);
+});
+
+
+/* ---------------------------------------------------------------------------
+   SCROLL REVEALS
+   The page is already readable; this only adds the entrance.
+   ------------------------------------------------------------------------ */
+const revealAll = () =>
+  document.querySelectorAll(".anim").forEach((el) => el.classList.add("anim--in"));
+
+let revealObserver = null;
+
+function wireReveals() {
+  const root = document.documentElement;
+  if (!root.classList.contains("js") || !("IntersectionObserver" in window)) {
+    revealAll();
+    return;
+  }
+  if (!revealObserver) {
+    revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const peers = Array.from(entry.target.parentElement.children)
+          .filter((el) => el.classList.contains("anim"));
+        const group = Math.max(peers.indexOf(entry.target), 0);
+        entry.target.style.setProperty("--d", Math.min(group, 5) * 85 + "ms");
+        entry.target.classList.add("anim--in");
+        revealObserver.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -12% 0px", threshold: 0.08 });
+  }
+  document.querySelectorAll(".anim:not(.anim--in)").forEach((el) => revealObserver.observe(el));
+}
+
+
+/* ---------------------------------------------------------------------------
+   HEADER, PROGRESS AND PARALLAX — one pass per frame
+   ------------------------------------------------------------------------ */
+(function () {
+  const bar = $("#topbar");
+  const progress = $("#progress");
+  const hero = document.querySelector(".hero");
+  const heroInner = document.querySelector(".hero .wrap");
+  const ribbonSection = document.querySelector(".ribbon");
+  const ribbonShift = $("#ribbonShift");
+  const motionOK = document.documentElement.classList.contains("js");
+  let queued = false;
+
+  function paint() {
+    queued = false;
+    const y = window.scrollY;
+    const vh = window.innerHeight;
+
+    bar.classList.toggle("is-on", y > vh * 0.55);
+
+    const scrollable = document.documentElement.scrollHeight - vh;
+    progress.style.width = (scrollable > 0 ? Math.min(y / scrollable, 1) * 100 : 0) + "%";
+
+    if (!motionOK) return;
+
+    /* The hero drifts up slower than the page and dims as it leaves, so the
+       ribbon below feels like it slides over the top of it. */
+    const heroH = hero.offsetHeight || 1;
+    if (y < heroH) {
+      heroInner.style.transform = "translate3d(0," + (y * 0.16).toFixed(1) + "px,0)";
+      heroInner.style.opacity = (1 - (y / heroH) * 0.85).toFixed(3);
+    } else if (heroInner.style.opacity !== "0") {
+      heroInner.style.opacity = "0";
+    }
+
+    /* The ribbon nudges sideways against the scroll, on top of its own
+       constant drift, so the two never lock into one flat motion. */
+    if (ribbonShift) {
+      const rect = ribbonSection.getBoundingClientRect();
+      if (rect.bottom > -200 && rect.top < vh + 200) {
+        const centred = (rect.top + rect.height / 2 - vh / 2) / vh;
+        ribbonShift.style.transform = "translate3d(" + (centred * 46).toFixed(1) + "px,0,0)";
+      }
+    }
+  }
+
+  function onScroll() {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(paint);
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll, { passive: true });
+  paint();
+})();
+
+
+/* ---------------------------------------------------------------------------
+   START, AND THE LANGUAGE SWITCH
+   ------------------------------------------------------------------------ */
+render();
+wireReveals();
+
+$("#langToggle").addEventListener("click", () => {
+  LANG = LANG === "ar" ? "en" : "ar";
+  try { localStorage.setItem("as-lang", LANG); } catch (e) { /* not essential */ }
+  closeLightbox();
+  render();
+  /* The switch is a deliberate act, so the new text arrives complete rather
+     than waiting to be scrolled into view again. */
+  revealAll();
+});
+
+/* Safety nets: nothing stays hidden if an observer or the curtain misfires. */
+setTimeout(revealAll, 2600);
+setTimeout(() => document.documentElement.classList.add("ready"), 4200);
+</script>
+
+</body>
+</html>
