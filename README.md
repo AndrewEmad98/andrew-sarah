@@ -1,7 +1,7 @@
 # Andrew & Sarah
 
 The engagement invitation — Saturday 26 September 2026, 8pm,
-Maryland Wedding Hall, Assiut.
+Merryland Wedding Hall, Assiut.
 
 Live at **https://andrewemad98.github.io/andrew-sarah/**
 
