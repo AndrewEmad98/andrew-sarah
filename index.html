@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://andrewemad98.github.io/andrew-sarah/">
 <meta property="og:title" content="Andrew &amp; Sarah">
-<meta property="og:description" content="Saturday 26 September 2026 · 8pm · Maryland Wedding Hall, Assiut">
+<meta property="og:description" content="Saturday 26 September 2026 · 7pm · Maryland Wedding Hall, Assiut">
 <meta property="og:image" content="https://andrewemad98.github.io/andrew-sarah/photos/01-we-said-yes.jpg">
 <meta property="og:locale" content="en_GB">
 <meta property="og:locale:alternate" content="ar_EG">
@@ -638,15 +638,6 @@ button.ribbon__item:hover .frame::after,
   aspect-ratio:3/4;
   border:1px solid rgba(216,178,107,.3);
 }
-.lightbox__cap{
-  font-family:var(--display);
-  font-style:italic;
-  font-size:1rem;
-  color:var(--cream);
-  opacity:.8;
-  text-align:center;
-  margin:0;
-}
 .lightbox__close{
   position:absolute;
   top:calc(14px + env(safe-area-inset-top,0px)); inset-inline-end:16px;
@@ -1155,11 +1146,11 @@ const EVENT = {
          what makes the countdown read the same for a guest in Egypt and a
          guest abroad. Without it, every phone would count down to 8pm in its
          OWN city. Cairo is +03:00 in summer and +02:00 from late October. --- */
-  startsAt: "2026-09-26T20:00:00+03:00",
+  startsAt: "2026-09-26T19:00:00+03:00",
 
   /* --- How that date reads on the page --- */
   dateLabel: { en: "Saturday, 26 September 2026", ar: "السبت ٢٦ سبتمبر ٢٠٢٦" },
-  timeLabel: { en: "8:00 in the evening",         ar: "الثامنة مساءً" },
+  timeLabel: { en: "7:00 in the evening",         ar: "السابعة مساءً" },
 
   /* --- Where --- */
   city:      { en: "Assiut, Egypt",            ar: "أسيوط، مصر" },
@@ -1198,35 +1189,29 @@ const EVENT = {
   /* --- PHOTOS ---
      Drop your images into the "photos" folder next to this file, then put the
      filename in src. Until then a placeholder holds the slot.
-     Example: { src: "photos/01.jpg", alt: "Us by the Nile",
-                caption: { en: "The night of the question", ar: "ليلة السؤال" } }
+     alt is the description a screen reader reads out; it is not shown.
+     Example: { src: "photos/01.jpg", alt: "Us by the Nile" }
   --------------------------------------------------------------------------- */
   photos: [
     { src: "photos/01-we-said-yes.jpg",
-      alt: "Andrew and Sarah under the flower arch on the night of the engagement",
-      caption: { en: "We said yes", ar: "قلنا نعم" } },
+      alt: "Andrew and Sarah under the flower arch on the night of the engagement" },
 
     /* wide: true marks a photo shot landscape, so the drifting ribbon
        gives it a landscape frame instead of a portrait one. */
     { src: "photos/02-dinner-outside.jpg", wide: true,
-      alt: "Andrew and Sarah at a garden restaurant",
-      caption: { en: "Dinner under the trees", ar: "عشاء تحت الشجر" } },
+      alt: "Andrew and Sarah at a garden restaurant" },
 
     { src: "photos/03-golden-hour.jpg",
-      alt: "Andrew and Sarah outside at sunset",
-      caption: { en: "Golden hour", ar: "ساعة الغروب" } },
+      alt: "Andrew and Sarah outside at sunset" },
 
     { src: "photos/04-our-coffee.jpg",
-      alt: "Andrew and Sarah at their usual coffee place",
-      caption: { en: "Our usual coffee", ar: "قهوتنا المعتادة" } },
+      alt: "Andrew and Sarah at their usual coffee place" },
 
     { src: "photos/05-an-ordinary-afternoon.jpg",
-      alt: "Andrew and Sarah on an ordinary afternoon out",
-      caption: { en: "An ordinary afternoon", ar: "عصر يوم عادي" } },
+      alt: "Andrew and Sarah on an ordinary afternoon out" },
 
     { src: "photos/06-we-found-love.jpg",
-      alt: "Andrew and Sarah seated under the flower arch on the night of the engagement",
-      caption: { en: "We found love", ar: "وجدنا الحب" } }
+      alt: "Andrew and Sarah seated under the flower arch on the night of the engagement" }
   ]
 };
 
@@ -1381,7 +1366,7 @@ function render() {
 function frame(photo, index) {
   if (photo.src) {
     return '<div class="frame"><img src="' + esc(photo.src) + '" alt="' +
-      esc(photo.alt || T(photo.caption) || T(EVENT.names.one)) + '" loading="lazy"></div>';
+      esc(photo.alt) + '" loading="lazy"></div>';
   }
   const label = esc(fill(ui.photoHere, index + 1)).replace(/\s(?=\S+$)/, "<br>");
   return '<div class="frame frame--empty">' +
@@ -1556,14 +1541,11 @@ let lastFocused = null;
 
 function renderLightboxStage() {
   const photo = EVENT.photos[currentPhoto];
-  const caption = T(photo.caption);
-  const media = photo.src
-    ? '<img src="' + esc(photo.src) + '" alt="' + esc(photo.alt || caption) + '">'
+  lightbox.querySelector(".lightbox__stage").innerHTML = photo.src
+    ? '<img src="' + esc(photo.src) + '" alt="' + esc(photo.alt) + '">'
     : '<div class="lightbox__empty frame frame--empty">' +
       '<span class="ph-mark">&#9670;</span>' +
       '<span class="ph-text">' + esc(fill(ui.photoHere, currentPhoto + 1)) + '</span></div>';
-  lightbox.querySelector(".lightbox__stage").innerHTML =
-    media + (caption ? '<p class="lightbox__cap">' + esc(caption) + '</p>' : "");
 }
 
 function openLightbox(index) {
